@@ -64,7 +64,7 @@ const App = () => {
             mobileOpen={mobileOpen}
             setMobileOpen={setMobileOpen}
           />
-          <main style={{ flex: 1, overflow: "hidden" }}>
+          <main style={{ flex: 1, overflowY: "auto" }}>
             {renderPage()}
           </main>
         </div>

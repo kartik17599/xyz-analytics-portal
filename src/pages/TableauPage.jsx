@@ -13,38 +13,39 @@ const TableauPage = ({ title, url, description }) => {
   const isPlaceholder = url.includes("YOUR_");
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "12px 16px", gap: 12 }}>
+    <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "16px 20px" }}>
 
       {/* Header */}
-      <div className="fade-up stagger-1" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12, flexShrink: 0 }}>
+      <div className="fade-up stagger-1" style={{ marginBottom: 16, display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 12, flexShrink: 0 }}>
         <div>
-          <div style={{ fontSize: 11, fontWeight: 600, color: BRAND.secondary, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 4 }}>
-            Dashboard
+          <div style={{ fontSize: 12, fontWeight: 600, color: BRAND.secondary, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 6 }}>
+            Interactive Dashboard
           </div>
-          <h1 style={{ fontFamily: "'DM Serif Display', serif", fontSize: 22, color: BRAND.primary, lineHeight: 1 }}>{title}</h1>
+          <h1 style={{ fontFamily: "'DM Serif Display', serif", fontSize: 28, color: BRAND.primary }}>{title}</h1>
+          <p style={{ fontSize: 14, color: BRAND.textMuted, marginTop: 6 }}>{description}</p>
         </div>
         {!isPlaceholder && (
           <a href={url} target="_blank" rel="noopener noreferrer" style={{
             display: "flex", alignItems: "center", gap: 6,
             background: BRAND.primary, color: BRAND.white,
-            borderRadius: 8, padding: "8px 16px",
-            textDecoration: "none", fontSize: 12, fontWeight: 600, flexShrink: 0,
+            borderRadius: 9, padding: "10px 18px",
+            textDecoration: "none", fontSize: 13, fontWeight: 600,
           }}>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
               <polyline points="15 3 21 3 21 9"/>
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
-            Full Screen
+            Open in Tableau Public
           </a>
         )}
       </div>
 
       {/* Embed Container */}
       <div className="fade-up stagger-2" style={{
-        background: BRAND.white, borderRadius: 14,
+        background: BRAND.white, borderRadius: 18,
         border: `1px solid ${BRAND.border}`,
-        boxShadow: "0 2px 12px rgba(26,42,74,0.06)",
+        boxShadow: "0 4px 24px rgba(26,42,74,0.07)",
         overflow: "hidden", flex: 1, display: "flex", flexDirection: "column",
       }}>
         {isPlaceholder ? (
@@ -99,7 +100,7 @@ const TableauPage = ({ title, url, description }) => {
       </div>
 
       {/* Tips */}
-      <div className="fade-up stagger-3" style={{ marginTop: 0, display: "none", gap: 12, flexWrap: "wrap", flexShrink: 0 }}>
+      <div className="fade-up stagger-3" style={{ marginTop: 12, display: "flex", gap: 12, flexWrap: "wrap", flexShrink: 0 }}>
         {tips.map((tip, i) => (
           <div key={i} style={{
             background: BRAND.white, border: `1px solid ${BRAND.border}`,

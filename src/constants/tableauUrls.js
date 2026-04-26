@@ -1,2 +1,2 @@
 export const TABLEAU_SALES_URL   = "https://public.tableau.com/views/XYZSalesDashboard2024/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
-export const TABLEAU_QUALITY_URL = "https://public.tableau.com/views/XYZQualityDashboard2024/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+export const TABLEAU_QUALITY_URL = "https://public.tableau.com/views/XYZQualityDashboard2024/XYZQualityDashboard2024?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
