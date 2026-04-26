@@ -24,7 +24,6 @@ const XYZLogo = ({ size = 48, showText = true, collapsed = false }) => {
 
   // Full logo when not collapsed
   const s = size;
-  const unit = s / 2.97; // scale unit based on original ~89px-wide per letter
 
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
