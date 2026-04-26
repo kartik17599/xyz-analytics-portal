@@ -54,11 +54,11 @@ The solution delivers:
 
 | Resource | URL |
 |---|---|
-| 🌐 React Web App (Vercel) | `YOUR_VERCEL_URL` |
-| 📊 Sales Dashboard (Tableau Public) | `YOUR_TABLEAU_SALES_URL` |
-| ✅ Quality Dashboard (Tableau Public) | `YOUR_TABLEAU_QUALITY_URL` |
+| 🌐 React Web App (Vercel) | `https://xyz-analytics-portal-silk.vercel.app/` |
+| 📊 Sales Dashboard (Tableau Public) | `https://public.tableau.com/views/XYZSalesDashboard2024/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link` |
+| ✅ Quality Dashboard (Tableau Public) | `https://public.tableau.com/views/XYZQualityDashboard2024/XYZQualityDashboard2024?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link` |
 | 💾 Tableau Packaged Workbook (.twbx) | `/tableau/XYZ_Analytics_Portal.twbx` |
-| 💻 GitHub Repository | `YOUR_GITHUB_URL` |
+| 💻 GitHub Repository | `https://github.com/kartik17599/xyz-analytics-portal` |
 
 ---
 
